@@ -9,7 +9,7 @@ if priority not in ["high", "medium", "low"]:
 elif time_bound not in ["yes", "no"]:
     print("Error: Time-bound must be yes or no.")
 else:
-    # Process task based on priority using match case
+    # Initialize reminder based on priority using match case
     match priority:
         case "high":
             reminder = f"Reminder: '{task}' is a high priority task"
@@ -18,7 +18,7 @@ else:
         case "low":
             reminder = f"Note: '{task}' is a low priority task"
 
-    # Modify reminder based on time sensitivity
+    # Append time sensitivity message
     if time_bound == "yes":
         reminder += " that requires immediate attention today!"
     else:
