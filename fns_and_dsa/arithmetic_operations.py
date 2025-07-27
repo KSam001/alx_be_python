@@ -1,11 +1,11 @@
-def perform_operation(num1: float, num2: float, operation: str):
+def perform_operation(num1, num2, operation):
     """
     Performs basic arithmetic operations on two numbers.
     
     Args:
-        num1 (float): First number
-        num2 (float): Second number
-        operation (str): Operation to perform ('add', 'subtract', 'multiply', 'divide')
+        num1: First number
+        num2: Second number
+        operation: Operation to perform ('add', 'subtract', 'multiply', 'divide')
     
     Returns:
         float or str: Result of the operation or error message for division by zero
