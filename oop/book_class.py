@@ -19,7 +19,6 @@ class Book:
         self.title = title
         self.author = author
         self.year = year
-        print(f"Book '{self.title}' created.")
 
     def __del__(self):
         """
@@ -37,4 +36,4 @@ class Book:
         """
         Returns an official string representation of the Book.
         """
-        return f"Book('{self.title}', '{self.author}', {self.year}')"
+        return f"Book('{self.title}', '{self.author}', {self.year})"
